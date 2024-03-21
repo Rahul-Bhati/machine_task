@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Machine Task</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!-- fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"></script>
+
+    <!-- jquert cdn -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <style>
+      .row {
+        padding: 10px 0 0 20px;
+      }
+      .row h6 {
+        min-width: 100vh;
+        padding: 0px 0 5px 10px;
+      }
+      .row-2 {
+        margin-top: 20px;
+      }
+
+      .fa-pen {
+        color: #7f7b7b;
+        font-size: 12px;
+        padding: 5px;
+      }
+      .fa-pen:hover {
+        color: #000;
+        cursor: pointer;
+      }
+      th {
+        padding-left: 12px;
+        background: #e7e6e6;
+      }
+      .fa-chevron-down:hover {
+        cursor: pointer;
+      }
+
+      h5 {
+        font-size: 15px;
+        font-weight: 500;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- general info -->
+    <div class="row" style="background: #d0c5c5; min-width: 100%">
+      <div class="col-sm-10">
+        <h6>General Information</h6>
+      </div>
+      <div class="col-sm-2 onEdit">
+        <i
+          class="fa-solid fa-chevron-down"
+          style="float: right; margin-right: 20px"
+        ></i>
+      </div>
+    </div>
+    <!-- 1st row -->
+    <div class="row justify-content-between m-3">
+      <!-- makiing 3 col flexbox -->
+      <div class="col-sm-3 col-lg-3">
+        <div
+          class="row"
+          style="border-bottom: 0.5px solid #7f7b7b; padding: 10px 0 10px 0"
+        >
+          <div class="col-sm-5" style="padding-left: 0">
+            Name
+            <sup>
+              <i
+                class="fa-solid fa-asterisk"
+                style="color: red; font-size: 10px"
+              ></i>
+            </sup>
+          </div>
+          <div class="col-sm-5"><h5 class="text-input">Test api 1</h5></div>
+          <div class="col-sm-2" style="justify-items: end">
+            <i class="fa-solid fa-pen" style="float: right"></i>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3 col-lg-3">
+        <div
+          class="row"
+          style="border-bottom: 0.5px solid #7f7b7b; padding: 10px 0 10px 0"
+        >
+          <div class="col-sm-5" style="padding-left: 0">Num 1</div>
+          <div class="col-sm-5"><h5 class="text-input">599</h5></div>
+          <div class="col-sm-2" style="justify-items: end">
+            <i class="fa-solid fa-pen" style="float: right"></i>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3 col-lg-3">
+        <div
+          class="row"
+          style="border-bottom: 0.5px solid #7f7b7b; padding: 10px 0 10px 0"
+        >
+          <div class="col-sm-5" style="padding-left: 0">Decimal Num</div>
+          <div class="col-sm-5"><h5 class="text-input">20</h5></div>
+          <div class="col-sm-2">
+            <i class="fa-solid fa-pen" style="float: right"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2nd row -->
+    <div class="row justify-content-between m-3">
+      <!-- makiing 3 col flexbox -->
+      <div class="col-sm-3 col-lg-3">
+        <div
+          class="row"
+          style="border-bottom: 0.5px solid #7f7b7b; padding: 10px 0 10px 0"
+        >
+          <div class="col-sm-5" style="padding-left: 0">boolean 1</div>
+          <div class="col-sm-5"><h5 class="radio-text">1</h5></div>
+          <div class="col-sm-2" style="justify-items: end">
+            <i class="fa-solid fa-pen" style="float: right"></i>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3 col-lg-3">
+        <div
+          class="row"
+          style="border-bottom: 0.5px solid #7f7b7b; padding: 10px 0 10px 0"
+        >
+          <div class="col-sm-5" style="padding-left: 0">
+            Checkbox <sup><i class="fa-solid fa-circle-info"></i></sup>
+          </div>
+          <div class="col-sm-5"><h5 class="checkbox-text">1</h5></div>
+          <div class="col-sm-2" style="justify-items: end">
+            <i class="fa-solid fa-pen" style="float: right"></i>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3 col-lg-3">
+        <div
+          class="row"
+          style="border-bottom: 0.5px solid #7f7b7b; padding: 10px 0 10px 0"
+        >
+          <div class="col-sm-5" style="padding-left: 0">Date Field</div>
+          <div class="col-sm-5"><h5 class="date_field">2024-03-08</h5></div>
+          <div class="col-sm-2">
+            <i class="fa-solid fa-pen" style="float: right"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 3rd row -->
+    <div class="row justify-content-between m-3">
+      <!-- makiing 3 col flexbox -->
+      <div class="col-sm-3 col-lg-3">
+        <div
+          class="row"
+          style="border-bottom: 0.5px solid #7f7b7b; padding: 10px 0 10px 0"
+        >
+          <div class="col-sm-5" style="padding-left: 0">Status</div>
+          <div class="col-sm-5"><h5 class="status_select_tag">Active</h5></div>
+          <div class="col-sm-2" style="justify-items: end">
+            <i class="fa-solid fa-pen" style="float: right"></i>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3 col-lg-3">
+        <div
+          class="row"
+          style="border-bottom: 0.5px solid #7f7b7b; padding: 10px 0 10px 0"
+        >
+          <div class="col-sm-3" style="padding-left: 0">DateTime</div>
+          <div class="col-sm-7">
+            <h5 class="dateTime">2024-03-08 16:37:00</h5>
+          </div>
+          <div class="col-sm-2" style="justify-items: end">
+            <i class="fa-solid fa-pen" style="float: right"></i>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3 col-lg-3">
+        <div
+          class="row"
+          style="border-bottom: 0.5px solid #7f7b7b; padding: 10px 0 10px 0"
+        >
+          <div class="col-sm-5" style="padding-left: 0">RelatedF</div>
+          <div class="col-sm-5"><h5 class="RelatedF_select_tag">LNVJ5</h5></div>
+          <div class="col-sm-2">
+            <i class="fa-solid fa-pen" style="float: right"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 4th row -->
+    <div class="row justify-content-between m-3">
+      <!-- makiing 3 col flexbox -->
+      <div class="col-sm-3 col-lg-3">
+        <div
+          class="row"
+          style="border-bottom: 0.5px solid #7f7b7b; padding: 10px 0 10px 0"
+        >
+          <div class="col-sm-5" style="padding-left: 0">Self Relation</div>
+          <div class="col-sm-5">
+            <h5 class="Self_Relation_select_tag">Test api 2</h5>
+          </div>
+          <div class="col-sm-2" style="justify-items: end">
+            <i class="fa-solid fa-pen" style="float: right"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- system info -->
+    <div class="row" style="background: #d0c5c5; min-width: 100%">
+      <div class="col-sm-10">
+        <h6>System Information</h6>
+      </div>
+      <div class="col-sm-2">
+        <i
+          class="fa-solid fa-chevron-down"
+          style="float: right; margin-right: 20px"
+        ></i>
+      </div>
+    </div>
+    <!-- 1st row -->
+    <div class="row justify-content-between m-3">
+      <!-- makiing 3 col flexbox -->
+      <div class="col-sm-3 col-lg-3">
+        <div
+          class="row"
+          style="border-bottom: 0.5px solid #7f7b7b; padding: 10px 0 10px 0"
+        >
+          <div class="col-sm-5" style="padding-left: 0">
+            Created by
+            <sup>
+              <i
+                class="fa-solid fa-asterisk"
+                style="color: red; font-size: 10px"
+              ></i>
+            </sup>
+          </div>
+          <div class="col-sm-7">Preeti</div>
+        </div>
+      </div>
+      <div class="col-sm-3 col-lg-3">
+        <div
+          class="row"
+          style="border-bottom: 0.5px solid #7f7b7b; padding: 10px 0 10px 0"
+        >
+          <div class="col-sm-5" style="padding-left: 0">
+            Last Modified by
+            <sup>
+              <i
+                class="fa-solid fa-asterisk"
+                style="color: red; font-size: 10px"
+              ></i>
+            </sup>
+          </div>
+          <div class="col-sm-7">thakur</div>
+        </div>
+      </div>
+      <div class="col-sm-3 col-lg-3">
+        <div
+          class="row"
+          style="border-bottom: 0.5px solid #7f7b7b; padding: 10px 0 10px 0"
+        >
+          <div class="col-sm-5" style="padding-left: 0">
+            Id
+            <sup>
+              <i
+                class="fa-solid fa-asterisk"
+                style="color: red; font-size: 10px"
+              ></i>
+            </sup>
+          </div>
+          <div class="col-sm-7">1</div>
+        </div>
+      </div>
+    </div>
+    <!-- 2nd row -->
+    <div class="row justify-content-between m-3">
+      <!-- makiing 3 col flexbox -->
+      <div class="col-sm-3 col-lg-3">
+        <div
+          class="row"
+          style="border-bottom: 0.5px solid #7f7b7b; padding: 10px 0 10px 0"
+        >
+          <div class="col-sm-5" style="padding-left: 0">
+            Created Date
+            <sup>
+              <i
+                class="fa-solid fa-asterisk"
+                style="color: red; font-size: 10px"
+              ></i>
+            </sup>
+          </div>
+          <div class="col-sm-7">2024-04-09 14:44:33</div>
+        </div>
+      </div>
+      <div class="col-sm-3 col-lg-3">
+        <div
+          class="row"
+          style="border-bottom: 0.5px solid #7f7b7b; padding: 10px 0 10px 0"
+        >
+          <div class="col-sm-5" style="padding-left: 0">
+            Modified Date
+            <sup>
+              <i
+                class="fa-solid fa-asterisk"
+                style="color: red; font-size: 10px"
+              ></i>
+            </sup>
+          </div>
+          <div class="col-sm-7">2024-04-09 14:44:33</div>
+        </div>
+      </div>
+      <div class="col-sm-3 col-lg-3">
+        <div
+          class="row"
+          style="border-bottom: 0.5px solid #7f7b7b; padding: 10px 0 10px 0"
+        >
+          <div class="col-sm-5" style="padding-left: 0">
+            Owner
+            <sup>
+              <i
+                class="fa-solid fa-asterisk"
+                style="color: red; font-size: 10px"
+              ></i>
+            </sup>
+          </div>
+          <div class="col-sm-7">2881</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tasks -->
+    <div class="row" style="background: #d0c5c5; min-width: 100%">
+      <div class="col-sm-10">
+        <h6>Tasks</h6>
+      </div>
+      <div class="col-sm-2">
+        <i
+          class="fa-solid fa-chevron-down"
+          style="float: right; margin-right: 20px"
+        ></i>
+      </div>
+    </div>
+
+    <div class="row" style="margin: 0; padding: 0">
+      <table class="table-bordered">
+        <thead>
+          <th><input type="checkbox" name="" id="" class="form" /></th>
+          <th>#</th>
+          <th>Title</th>
+          <th>Assigned To:name</th>
+          <th>Due Date</th>
+          <th>Type</th>
+          <th>Status</th>
+          <th>Priority</th>
+          <th>Related Time</th>
+          <th>Created Date</th>
+          <th>Modified By</th>
+          <th>Actions</th>
+        </thead>
+      </table>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(document).ready(function () {
+        $(".fa-pen").click(function () {
+          alert("clicked");
+          var text = $(".text-input").each(function (index, oneSpan) {
+            var input = $(
+              '<input type="text" class="form-control" value="' +
+                $(oneSpan).text() +
+                '" />'
+            );
+            $(oneSpan).text("").append(input);
+            $(".fa-pen").hide();
+          });
+
+          let radio_text = $(".radio-text").text();
+          $(".radio-text")
+            .text("")
+            .append(
+              '<input type="radio" name="radio" class="form-check-input" value="true" /> true<br>' +
+                '<input type="radio" name="radio" class="form-check-input" value="false" /> false'
+            );
+
+          let checkbox_text = $(".checkbox-text").text();
+          $(".checkbox-text")
+            .text("")
+            .append(
+              '<input type="checkbox" class="form-check-input" name="checkbox" value="true" />'
+            );
+
+          let date_field = $(".date_field").text();
+          $(".date_field")
+            .text("")
+            .append('<input type="date" value="' + date_field + ' " />');
+
+          let status_select_tag = $(".status_select_tag").text();
+          $(".status_select_tag")
+            .text("")
+            .append(
+              '<select class="form-select" aria-label="Default select example">' +
+                '<option value="Active">Active</option>' +
+                '<option value="Late">Late</option>' +
+                '<option value="Not active">Not active</option>' +
+                "</select>"
+            );
+
+          let RelatedF_select_tag = $(".RelatedF_select_tag").text();
+          $(".RelatedF_select_tag")
+            .text("")
+            .append(
+              '<select class="form-select" aria-label="Default select example">' +
+                '<option value="LNVJ5">LNVJ5</option>' +
+                '<option value="LNVJ6">LNVJ6</option>' +
+                '<option value="LNVJ7">LNVJ7</option>' +
+                "</select>"
+            );
+
+          let Self_Relation_select_tag = $(".Self_Relation_select_tag").text();
+          $(".Self_Relation_select_tag")
+            .text("")
+            .append(
+              '<select class="form-select" aria-label="Default select example">' +
+                '<option value="Test api 2">Test api 2</option>' +
+                '<option value="Test api 3">Test api 3</option>' +
+                '<option value="Test api 4">Test api 4</option>' +
+                "</select>"
+            );
+
+          let dateTime = $(".dateTime").text();
+          $(".dateTime")
+            .text("")
+            .append(
+              '<input type="datetime-local" value="' + dateTime + ' " />'
+            );
+
+          $(".onEdit").html(`
+          <div style="float: right;margin-right: 20px;cursor:pointer;">
+            <span class='text-danger'>Cancel</span> &nbsp;
+            <span class='text-danger'>Save</span>
+          </div>
+      `);
+        });
+      });
+    </script>
+  </body>
+</html>
